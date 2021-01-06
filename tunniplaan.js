@@ -1,7 +1,7 @@
 class Tunniplaan {
-  constructor(opetaja, kuupäev) {
+  constructor(opetaja, kuupaev) {
     this.opetaja = opetaja;
-    this.kuupäev = kuupäev;
+    this.kuupaev = kuupaev;
   }
 
   async opetajaTunniplaaniAndmed() {
@@ -9,7 +9,7 @@ class Tunniplaan {
       "https://siseveeb.khk.ee/veebilehe_andmed/tunniplaan?opetaja=" +
         this.opetaja +
         "&nadal=" +
-        this.kuupäev
+        this.kuupaev
     );
     const andmed = await vastus.json();
     return andmed;
