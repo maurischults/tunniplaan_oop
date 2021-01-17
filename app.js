@@ -1,5 +1,11 @@
 // tunniplaani objekt
-const tunniplaan = new Tunniplaan(346, "2021-01-11");
+
+function Andmed() {
+  opetaja = document.getElementById("opetajaid").value;
+}
+// opetaja = 346;
+// kuupaev = "2021-01-11";
+const tunniplaan = new Tunniplaan(opetaja, kuupaev);
 
 // kasutajaliidese objekt
 const kl = new Kasutajaliides();
