@@ -1,7 +1,11 @@
 // tunniplaani objekt
+let opetaja;
+let kuupaev;
 
 function Andmed() {
-  opetaja = document.getElementById("opetajaid").value;
+  tunniplaan.opetaja = document.getElementById("opetajaid").value;
+  tunniplaan.kuupaev = document.getElementById("kuupaevid").value;
+  valjastaTunniplaan();
 }
 // opetaja = 346;
 // kuupaev = "2021-01-11";
